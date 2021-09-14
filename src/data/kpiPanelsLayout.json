@@ -1,0 +1,105 @@
+[
+  {
+    "panelHeader": "Total Sales",
+    "cards": [
+      {
+        "label": "Visits",
+        "valuesAccessor": ".totalSales.visits",
+        "type": "raw"
+      },
+      {
+        "label": "Sales",
+        "valuesAccessor": ".totalSales.sales",
+        "type": "monetary"
+      },
+      {
+        "label": "Orders",
+        "valuesAccessor": ".totalSales.orders",
+        "type": "raw"
+      },
+      {
+        "label": "Conversion rate",
+        "valuesAccessor": ".totalSales.conversionPercent",
+        "type": "percent"
+      },
+      {
+        "label": "Average visit value",
+        "valuesAccessor": ".totalSales.averageVisitValue",
+        "type": "monetary"
+      },
+      {
+        "label": "Average order value",
+        "valuesAccessor": ".totalSales.averageOrderValue",
+        "type": "monetary"
+      },
+      {
+        "label": "Items sold",
+        "valuesAccessor": ".totalSales.soldItems",
+        "type": "raw"
+      },
+      {
+        "label": "Sold items through Nosto",
+        "valuesAccessor": ".totalSales.soldItemsThroughNosto",
+        "type": "raw"
+      },
+      {
+        "label": "Share of items sold through Recommendations",
+        "valuesAccessor": ".totalSales.recommendedPercentOfSoldItems",
+        "type": "percent"
+      }
+    ]
+  },
+  {
+    "panelHeader": "Potential Sales",
+    "cards": [
+      {
+        "label": "Carts",
+        "valuesAccessor": ".potentialSales.carts",
+        "type": "raw"
+      },
+      {
+        "label": "Cart total value",
+        "valuesAccessor": ".potentialSales.cartTotalValue",
+        "type": "monetary"
+      },
+      {
+        "label": "Carts abandoned",
+        "valuesAccessor": ".potentialSales.cartsAbandoned",
+        "type": "raw",
+        "positiveUp": false
+      },
+      {
+        "label": "Abandoned cart rate",
+        "valuesAccessor": ".potentialSales.cartsAbandonedPercent",
+        "type": "percent",
+        "positiveUp": false
+      },
+      {
+        "label": "Average abandoned cart value",
+        "valuesAccessor": ".potentialSales.averageAbandonedCartValue",
+        "type": "monetary",
+        "positiveUp": false
+      }
+    ]
+  },
+  {
+    "panelHeader": "Session Lifecycle",
+    "cards": [
+      {
+        "label": "Total page views",
+        "valuesAccessor": ".sessionLifecycle.totalPageViews",
+        "type": "raw"
+      },
+      {
+        "label": "Total product views",
+        "valuesAccessor": ".sessionLifecycle.totalProductViews",
+        "type": "monetary"
+      },
+      {
+        "label": "Average session duration",
+        "valuesAccessor": ".sessionLifecycle.averageSessionDuration",
+        "type": "durationSeconds"
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+.panel.custom-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: $space-x-small $space-xx-small;
+
+  .custom-panel-header {
+    flex-basis: 100%;
+    margin-bottom: $space-xx-small;
+    padding: 0 $space-xx-small;
+    display: flex;
+    justify-content: space-between;
+
+    * {
+      margin: 0;
+    }
+  }
+
+  .custom-panel-subheading {
+    flex-basis: 100%;
+    margin-top: $space-x-small;
+    margin-bottom: $space-small;
+    padding: 0 $space-xx-small;
+  }
+
+  .panel {
+    flex-basis: calc((100% - #{$space-xx-small} * 6) / 3);
+    min-height: 115px;
+    order: 1;
+    align-self: stretch;
+    margin: 0 $space-xx-small;
+    margin-top: $space-x-small;
+
+    @media only screen and (max-width: 900px) {
+      min-width: none;
+      flex-basis: calc((100% - #{$space-xx-small} * 2))
+    }
+  }
+}

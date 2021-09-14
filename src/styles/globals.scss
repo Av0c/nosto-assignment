@@ -1,0 +1,17 @@
+.select-input {
+  font-family: inherit;
+  width: 256px;
+  color: $color-ink;
+  padding: $space-xx-small $space-xx-small;
+  font-size: $font-size-x-small;
+
+  background: $color-white;
+  border: 1px solid $color-grey-light;
+  box-sizing: border-box;
+  border-radius: $border-radius-default;
+
+  &:hover, &:focus {
+    border-color: $color-grey-dark;
+    cursor: pointer;
+  }
+}
